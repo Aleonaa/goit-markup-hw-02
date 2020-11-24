@@ -5,9 +5,17 @@
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
 }
+
 .body {
   font-family: var(--main-font);
   color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
 /*=============== Site Header==============*/
@@ -16,9 +24,10 @@
   text-decoration: none;
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px; 
+  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: #000000;
 }
 
 .adress {
@@ -33,6 +42,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.header-tel,
+.header-mail {
+  color: var(--primary-text-color);
+}
+
 
 .header-tel:hover,
 .header-tel:focus,
@@ -46,10 +60,6 @@
   color: var(--accent-text-color);
 }
 
-.logo-black {
-  color: #000000;
-}
-
 .nav-list-link {
   color: var(--secondary-text-color);
 }
@@ -57,6 +67,9 @@
 /*===============End Site Header==============*/
 
 /*=================HERO================*/
+.hero-background {
+  background: #2f303a;
+}
 
 .hero-title {
   font-weight: 900;
@@ -65,7 +78,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: ffffff;*/
+  color: #ffffff;
 }
 
 .model-btn {
@@ -76,7 +89,9 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  /*color: #ffffff;*/
+  font-family: inherit;
+  color: #ffffff;
+  background: var(--accent-text-color);
 }
 
 /*=================End HERO================*/
@@ -137,14 +152,17 @@
   color: var(--secondary-text-color);
   font-weight: 500;
 }
+
 .team-profile {
   font-weight: 400;
 }
-<a href="/" aria-label="логотип сайта"> WebStudio</a>
+
 /*================End Team======================= */
 
 /*================Footer======================= */
-
+.footer-backgound {
+  background: #2f303a;
+}
 .footer-logo-blue,
 .footer-logo-white {
   font-family: var(--secondary-font);
@@ -157,9 +175,11 @@
 .footer-logo-blue {
   color: var(--accent-text-color);
 }
+
 .footer-logo-white {
-  /* color: ffffff;*/
+  color: #ffffff;
 }
+
 .footer-mail,
 .footer-tel,
 .adress-location {
@@ -168,15 +188,40 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
-  /*color: #FFFFFF;*/
+}
+
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-text-color);
 }
 
 .footer-mail,
 .footer-tel {
-  /*color: rgba(255, 255, 255, 0.6);*/
+  color: rgba(255, 255, 255, 0.6);
 }
 .adress-location {
-  /*color: #FFFFFF;*/
+  color: #ffffff;
 }
 
 /*================End Footer======================= */
+
+/*==================== Portfolio=====================*/
+.select button .is-current {
+}
+.select button:hover,
+.select button:focus,{
+   color: var(--accent-text-color)
+}
+.select button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  color: #ffffff;
+  background: var(--accent-text-color
+}
+/*====================End Portfolio=====================*/
