@@ -58,7 +58,7 @@ a {
 .header-mail.is-current {
   color: var(--accent-text-color);
 }
-
+.portfolio-link,
 .nav-list-link {
   color: var(--secondary-text-color);
 }
